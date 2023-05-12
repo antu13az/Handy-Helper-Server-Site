@@ -43,7 +43,7 @@ const client = new MongoClient(uri, {
 
 const run = async () => {
   try {
-    await client.connect();
+     client.connect();
     //Tools Collection
     const toolsCollection = client.db("nortexTools").collection("tools");
     // Bookings Collection
